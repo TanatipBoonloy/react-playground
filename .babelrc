@@ -11,7 +11,12 @@
         "root": [
           "./src",
           "./"
-        ]
+        ],
+        "alias": {
+          "layout": "./src/components/layout",
+          "atoms": "./src/components/atoms",
+          "localization": "./src/static/localization"
+        }
       }
     ]
   ]

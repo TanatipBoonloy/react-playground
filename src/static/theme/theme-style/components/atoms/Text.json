@@ -1,0 +1,14 @@
+{
+  "a": {
+    "color": {
+      "primary": "primary",
+      "default": "grey"
+    },
+    "onHover": {
+      "color": {
+        "primary": "primary",
+        "default": "grey"
+      }
+    }
+  }
+}

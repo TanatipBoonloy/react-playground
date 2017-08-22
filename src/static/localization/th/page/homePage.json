@@ -1,0 +1,18 @@
+{
+  "label": {
+    "title": "ยินดีต้อนรับสู่ React",
+    "description": "แก้ไขไฟล์ src/App เพื่อเริ่มต้น",
+    "providerPattern": "ทดสอบ Provider Pattern ( withColor )!",
+    "selectedLanguage": "ภาษาที่เลือก",
+    "changeLanguage": "เลือกภาษาที่นี่"
+  },
+  "button": {
+    "aboutPageButton": "กดปุ่มนี้เพื่อไปสู่หน้า เกี่ยวกับเรา",
+    "todoPageButton": "กดปุ่มนี้เพื่อไปสู่หน้า รายการที่ต้องทำ",
+    "changeColorButton": "กดปุ่มเพื่อเปลี่ยนเป็นสีเขียว"
+  },
+  "link": {
+    "aboutPageLink": "กดลิงค์นี้เพื่อไปสู่หน้า เกี่ยวกับเรา",
+    "todoPageLink": "กดลิงค์นี้เพื่อไปสู่หน้า รายการที่ต้องทำ"
+  }
+}

@@ -1,17 +1,22 @@
 import React from 'react'
-import logo from './logo.svg'
-import './App.css'
+import { Provider } from 'react-redux'
+import { ThemeProvider } from 'styled-components'
+import getStore from './app-store'
+import Routes from './Route'
+import ColorProvider from './providers/ColorProvider'
+import LocalizationProvider from './providers/LocalizationProvider'
+import theme from './static/theme'
 
 const App = () => (
-  <div className="App">
-    <div className="App-header">
-      <img src={logo} className="App-logo" alt="logo" />
-      <h2>Welcome to React</h2>
-    </div>
-    <p className="App-intro">
-      To get started, edit <code>src/App.js</code> and save to reload.
-    </p>
-  </div>
+  <Provider store={getStore()}>
+    <LocalizationProvider>
+      <ThemeProvider theme={theme}>
+        <ColorProvider>
+          <Routes />
+        </ColorProvider>
+      </ThemeProvider>
+    </LocalizationProvider>
+  </Provider>
 )
 
 export default App

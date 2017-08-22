@@ -1,0 +1,64 @@
+{
+  "h1": {
+    "medium": {
+      "desktop": 35,
+      "tablet": 35,
+      "mobile": 10
+    }
+  },
+  "h2": {
+    "medium": {
+      "desktop": 25,
+      "tablet": 25,
+      "mobile": 25
+    }
+  },
+  "h3": {
+    "medium": {
+      "desktop": 21,
+      "tablet": 21,
+      "mobile": 21
+    }
+  },
+  "h4": {
+    "medium": {
+      "desktop": 18,
+      "tablet": 18,
+      "mobile": 18
+    }
+  },
+  "h5": {
+    "medium": {
+      "desktop": 17,
+      "tablet": 17,
+      "mobile": 17
+    }
+  },
+  "span": {
+    "big": {
+      "desktop": 19,
+      "tablet": 19,
+      "mobile": 19
+    },
+    "medium": {
+      "desktop": 16,
+      "tablet": 16,
+      "mobile": 16
+    },
+    "small": {
+      "desktop": 14,
+      "tablet": 14,
+      "mobile": 14
+    },
+    "tiny": {
+      "desktop": 12,
+      "tablet": 12,
+      "mobile": 12
+    },
+    "mini": {
+      "desktop": 9,
+      "tablet": 9,
+      "mobile": 9
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "label": {
+    "title": "Welcome to React",
+    "description": "To get started, edit src/App.js and save to reload.",
+    "providerPattern": "Test Provider Pattern ( withColor )!",
+    "selectedLanguage": "Selected Language",
+    "changeLanguage": "Select Your Language Here"
+  },
+  "button": {
+    "aboutPageButton": "This is Button to About Page",
+    "todoPageButton": "This is Button to Todos Page",
+    "changeColorButton": "Click To Change Color To Green"
+  },
+  "link": {
+    "aboutPageLink": "This is Link to About Page",
+    "todoPageLink": "This is Link to Todos Page"
+  }
+}
