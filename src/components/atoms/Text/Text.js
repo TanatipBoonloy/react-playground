@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { darken } from 'polished'
-import { getValue } from 'helpers/utils'
+import { getColor, getConfig, getStyle } from 'helpers/styles'
 
 const TextComponent = (props) => {
   const {
@@ -16,33 +16,34 @@ const TextComponent = (props) => {
     ...otherProps
   } = props
 
-  const getTextStyle = (themeStyle) => getValue(() => themeStyle.components.atoms.text)
+  const getStylePath = (styleConf) => styleConf.components.atoms.text
 
   const Element = styled[as]`
     ${inline && 'display: inline;'}
     ${bold && 'font-weight: bold;'}
-    color: ${({ theme: { colors, themeStyle } }) => {
+    color: ${(styledComponentProps) => {
     if (as === 'a') {
-      return (colors[color]
+      return (getColor(color)(styledComponentProps)
         || (primary ?
-          getTextStyle(themeStyle).a.color.primary
-          : getTextStyle(themeStyle).a.color.default
+          getStyle(getStylePath)((style) => style.a.color.primary)(styledComponentProps)
+          : getStyle(getStylePath)((style) => style.a.color.default)(styledComponentProps)
         )
       )
     }
-    return colors[color]
+    return getColor(color)(styledComponentProps)
   }
 };
-    ${({ theme: { colors, themeStyle, config: { darkenOnHover } } }) => {
+    ${(styledComponentProps) => {
     if (as === 'a') {
       const colorOnHover = hoverColor ?
-        colors[hoverColor]
+        getColor(hoverColor)(styledComponentProps)
         : darken(
-          darkenOnHover,
-          (colors[color]
+          getConfig('darkenOnHover')(styledComponentProps),
+          (getColor(color)(styledComponentProps)
           || (primary ?
-            getTextStyle(themeStyle).a.onHover.color.primary
-            : getTextStyle(themeStyle).a.onHover.color.default)
+            getStyle(getStylePath)((style) => style.a.onHover.color.primary)(styledComponentProps)
+            : getStyle(getStylePath)((style) => style.a.onHover.color.default)(styledComponentProps)
+          )
           )
         )
       return `

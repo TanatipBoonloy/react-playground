@@ -7,7 +7,7 @@
     "onHover": {
       "color": {
         "primary": "primary",
-        "default": "grey"
+        "default": "red"
       }
     }
   }
